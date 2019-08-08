@@ -15,3 +15,6 @@ git repository(save file is already commited)
 
 git checkout -- <file name>(remove a changes in f file which does not add into staging area )
 git reset HEAD <file name>( kick out the files was added into staging area)
+
+git reset --soft
+git reset --hard
