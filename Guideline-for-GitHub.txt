@@ -18,3 +18,10 @@ git reset HEAD <file name>( kick out the files was added into staging area)
 
 git reset --soft
 git reset --hard
+
+<!--the  way to push project to Github-->
+git remote add <name> <link.git>
+git push -u <name> <nameofbranch--master>
+<!--the way way copy/download from Github-->
+git clone <link>-- use for the first time download
+git pull--- use when project has some new .
