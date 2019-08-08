@@ -1,0 +1,17 @@
+hung pro
+
++ git init
+git status
+git add <Name file/folder> / add . (add All)
+git commit -m 'Your change'
+
++git log (show history)
+git show (+ id of file) (show what modified is)
+git diff // different
+
+work directory(save file is not add)
+staging area(save file isn't commit)
+git repository(save file is already commited)
+
+git checkout -- <file name>(remove a changes in f file which does not add into staging area )
+git reset HEAD <file name>( kick out the files was added into staging area)

@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>This is a WebPage using Bootstrap 4</title>
+    <!-- Import Boostrap css, js, font awesome here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="styles-folder/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navigation
+    it also has : nav-tac and nav-pill-->
+    <nav class="navbar navbar-expand-md bg-info navbar-dark">
+        <!--Brand/Logo-->
+        <a class="navbar-brand">LOGO</a>
+        <!--toggle/collapsible Button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <!--links-->
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#"> Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Devices</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Services </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Jumbotron
+    A jumbotron indicates a big grey box for calling extra attention to some special content or information.
+    Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid padding">
+            <h1 class="display1">Bootstrap Tutorial</h1>
+            <p class="text-justify">Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+        </div>
+    </div>
+    <!--typography-->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <!--if u want to devide s lot of column, u must be define its in one row-->
+            <div class="col text-justify">
+                <h1 class="display1">Hung Teo <small><mark>pro</mark></small></h1>
+                <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight)</p>
+            </div>
+            <div class="col">
+                <h1 class="display1">Hung Teo <small><code>pro</code></small></h1>
+                <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight)</p>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+    <!--table-->
+    <div class="container-fluid">
+        <h2 class="display2">Table Example</h2>
+        <table class="table table-dark table-striped col">
+            <!--note : table->normal no border 
+            table-striped -> white/gray
+            table-bordered ->marmal havr border
+        table-dark,sucess,...: table have dark,sucess,.. background 
+    table-responsive-'the size u want' : have expand or limit -->
+            <thead>
+                <tr>
+                    <th>Fisrt Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nguyen</td>
+                    <td>Hung</td>
+                    <td>null</td>
+                </tr>
+                <tr>
+                    <td>Nguyen</td>
+                    <td>Hoang</td>
+                    <td>null</td>
+                </tr>
+                <tr>
+                    <td>Nguyen</td>
+                    <td>Tri</td>
+                    <td>null</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Carousel : bang chuyen-->
+        <hr class="my-4">
+    </div>
+    <!--Alert-->
+    <div class="container-fluid ">
+        <div class="alert alert-primary">
+            <p> This alert box indicates an important action.</p>
+        </div>
+        <hr class="my-4">
+    </div>
+    <!--Image-->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col">
+                <!--float-left/right : canh trái phải
+                img-fluid : responsive img with max-width and height = auto-->
+                <img src="image-folder/cave.jpg" class="rounded float-left img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="image-folder/cave.jpg" class="img-thumbnail mx-auto d-block img-fluid">
+            </div>
+            <div class="col">
+                <img src="image-folder/cave.jpg" class="rounded-circle float-right img-fluid">
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+    <!--Button
+    have : style(color)/outline/size/block-->
+    <div class="container-fluid">
+        <h1>THIS IS A BUTTON </h1>
+        <div class="btn-group">
+            <!--button-group have a few option like : size/btn-group-vertical/Nest button/Split Button Dropdowns-->
+            <button type="button" class="btn btn-outline-success btn-md">
+            <span class="spinner-border spinner-border-sm"></span>
+            Touch Me
+            </button>
+            <button type="button" class="btn btn-outline-success btn-md">
+            <span class="spinner-border spinner-border-sm"></span>
+            Don't Touch Me
+            </button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown">I Have</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Front-end</a>
+                    <a class="dropdown-item" href="#">Back-end</a>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
+        <!--Progress bar-->
+        <div class="container-fluid padding">
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <h1 class="display1">Something About Me</h1>
+                    <pre>
+Name : Nguyễn Sỹ Cảnh Hưng
+Age : 20
+Study at : Information of Technology,dhQG-TPHCM
+Experiant : Not yet
+                    </pre>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="dispaly1">Skil of Me</h2>
+                        <p>Front-end</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" style="width:50%;height:20px">50%</div>
+                        </div>
+                        <br>
+                        <p>Back-end</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-info" style="width:70%;height:20px">70%</div>
+                        </div>
+                        <br>
+                        <p>Full-Stack</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:70%;height:20px">70%</div>
+                        </div>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
+        <div class="container-fluid padding">
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <div class="container">
+                        <h2>Colored Spinners</h2>
+                        <p>Use any <strong>text color utilites</strong> to add a color to the spinner:</p>
+
+                        <div class="spinner-border text-muted"></div>
+                        <div class="spinner-border text-primary"></div>
+                        <div class="spinner-border text-success"></div>
+                        <div class="spinner-border text-info"></div>
+                        <div class="spinner-border text-warning"></div>
+                        <div class="spinner-border text-danger"></div>
+                        <div class="spinner-border text-secondary"></div>
+                        <div class="spinner-border text-dark"></div>
+                        <div class="spinner-border text-light"></div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
+        <div class="container-fluid padding">
+            <!--Badge have : color/round or rectangular-->
+            <h1 class="display1">Example Badges <small><span class="badge badge-warning">New</span> </small></h1>
+            <button type="button" class="btn btn-primary ">
+                Message   <span class="badge badge-light">4</span>
+            </button>
+            <button type="button" class="btn btn-danger btn-lg">
+                Notice   <span class="badge badge-light badge-pill">12</span>
+            </button>
+            <hr class="my-4">
+        </div>
+        <!--Basic Pagination : mark the page number
+        also have : Breadcrumbs ??? Photos/Summer/2017/Italy/Rome-->
+        <div class="container-fluid padding">
+            <h2 class="display2">If you have a web site with lots of pages, you may wish to add some sort of pagination to each page.</h2>
+            <!--left-align-->
+            <ul class="pagination">
+                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"> <a class="page-link" href="#">2</a></li>
+                <li class="page-item"> <a class="page-link" href="#">3</a></li>
+                <li class="page-item"> <a class="page-link" href="#">Next</a></li>
+            </ul>
+            <!--center-align-->
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"> <a class="page-link" href="#">2</a></li>
+                <li class="page-item"> <a class="page-link" href="#">3</a></li>
+                <li class="page-item"> <a class="page-link" href="#">Next</a></li>
+            </ul>
+            <!--right-align-->
+            <ul class="pagination justify-content-end">
+                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"> <a class="page-link" href="#">2</a></li>
+                <li class="page-item"> <a class="page-link" href="#">3</a></li>
+                <li class="page-item"> <a class="page-link" href="#">Next</a></li>
+            </ul>
+            <hr class="my-4">
+        </div>
+        <!--List-group-->
+        <div class="container-fluid">
+            <h3>List Group</h3>
+            <div class="list-group">
+                <a class="list-group-item  active" href="#">
+                    <h4 class="list-group-item-heading">
+                        Boostrap4
+                    </h4>
+                    <p class="list-group-item-text">
+                        Bootstrap is a free and open-source front-end web framework for designing websites and web applications,...
+                    </p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Javascript
+                    </h4>
+                    <p class="list-group-item-text">
+                        JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive,...
+                    </p>
+                </a>
+                <a href="#" class="list-group-item disabled">
+                    <h4 class="list-group-item-heading">Css</h4>
+                    <p class="list-group-item-text">Comming Soon</p>
+                </a>
+            </div>
+        </div>
+        <!--Card-->
+        <div class="container-fluid">
+            <div class="row padding">
+                <div class="col-md-12 col-lg-6">
+                    <div class="card style=width:400px">
+                        <img class="card-img-top" src="image-folder/girl_xinh_BD.jpg">
+                        <div class="card-header">Describe about Girl</div>
+                        <div class="card-body">
+                            <h3 class="card-title display3">Thuy Hang</h3>
+                            <p class="card-text"> She is so cute.That Right !</p>
+                            <a class="btn btn-info stretched-link" href="#">See Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card style=width:400px">
+                        <img class="card-img-top" src="image-folder/girl_xinh_BD2.jpg">
+                        <div class="card-header">Describe about Girl</div>
+                        <div class="card-body">
+                            <h3 class="card-title display3">Thuy Hang</h3>
+                            <p class="card-text"> She is so cute, too . That Right !</p>
+                            <a class="btn btn-info" href="#">See Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <!--card also have : 
+            Card Columns : look like pinterest 
+            Card Deck : creates a grid of cards that are of equal height and width
+            Card Group :  -->
+        </div>
+        <!--Basic DropDown-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="display2">I will display a Basic Dropdown</h2>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown">
+                            Dropdown
+                        </button>
+                        <div class="dropdown-menu">
+                            <h3 class="dropdown-header">Introduction</h3>
+                            <a class="dropdown-item" href="#">Boostrap4</a>
+                            <a class="dropdown-item" href="#">HTML5</a>
+                            <a class="dropdown-item" href="#">CSS3</a>
+                            <h3 class="dropdown-header">Body</h3>
+                            <span class="dropdown-item-text"> Nothing to say !!!!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="display2">I will display a Collapse button</h2>
+                    <br>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#text">
+                        Show a Graph
+                    </button>
+                    <div id="text" class="collapse">Click on the button to toggle between showing and hiding content</div>
+                    <h2 class="display2">I will display a Collapse button</h2>
+                    <a href="#text2" class="btn btn-warning btn-lg" data-toggle="collapse">Show a Text </a>
+                    <div id="text2" class="collapse">Click on the button to toggle between showing and hiding content</div>
+                </div>
+                <div class="col-md-4">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    Row1
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                                        Row2
+                                    </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse show" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
+        <!--Form -->
+        <div class="container-fluid">
+            <div class="row padding">
+                <form class="form-inline" action="php-folder/form-page.php">
+                    <label for="email2" class="mb-2 mr-sm-2">Email:</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="Enter email" name="email">
+                    <label for="pwd2" class="mb-2 mr-sm-2">Password:</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="pwd2" placeholder="Enter password" name="pswd">
+                    <div class="form-check mb-2 mr-sm-2">
+                        <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="remember"> Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                </form>
+            </div>
+            <hr class="my-4">
+        </div>
+        <div class="pagination">
+	{% if pagination.previous %}
+		<a href="{{ pagination.prelink }}page={{ pagination.previous }}" class="btn btn-darker">
+			<i class="icon-chevron-left {{ icon_color }}"></i>
+		</a>
+	{% else %}
+		<span class="btn btn-darker"><i class="icon-chevron-left {{ icon_color }}"></i></span>
+	{% endif %}
+
+	{% if pagination.next %}
+		<a href="{{ pagination.prelink }}page={{ pagination.next }}" class="btn btn-darker"><i class="icon-chevron-right {{ icon_color }}"></i></a>
+	{% else %}
+		<span class="btn btn-darker"><i class="icon-chevron-right {{ icon_color }}"></i></span>
+	{% endif %}
+</div>
+</body>
+
+</html>

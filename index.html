@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>This is a WebPage using Bootstrap 4</title>
+    <!-- Import Boostrap css, js, font awesome here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="styles-folder/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <!--Navigation /Website Header 
+        navbar-expand-md : stacks the navbar vertically on small screen
+        navbar-light bg-light : color of website
+        sticky-top : stick on the top  -->
+        <div class="container-fluid">
+            <a class="navbar-branch" href="#">
+                <!--show your's logo -->
+                <img src="image-folder/logo.png" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <!--navbar-toggler : when clicked , the gif will explore,
+                click again then the gif dissappear
+                navbar-toggler-icon : create a icon looklike the menu -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <!--have the list/ ml-auto = automatically margin left -->
+                    <li class="nav-item">
+                        <!--use this class for make a list-->
+                        <a class="nav-link" href="#">Home</a>
+                        <!--use this class for add the link for Home-->
+                    </li>
+                    <li class="nav-item">
+                        <!--use this class for make a list-->
+                        <a class="nav-link" href="#jumbotron">About</a>
+                        <!--use this class for add the link for Home-->
+                    </li>
+                    <li class="nav-item">
+                        <!--use this class for make a list-->
+                        <a class="nav-link" href="#">Services</a>
+                        <!--use this class for add the link for Home-->
+                    </li>
+                    <li class="nav-item">
+                        <!--use this class for make a list-->
+                        <a class="nav-link" href="#">Team</a>
+                        <!--use this class for add the link for Home-->
+                    </li>
+                    <li class="nav-item">
+                        <!--use this class for make a list-->
+                        <a class="nav-link" href="#">Connect</a>
+                        <!--use this class for add the link for Home-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Carousel : bang chuyen-->
+    <div id="slide" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#slide" data-slide-to="0" class="active"></li>
+            <li data-target="#slide" data-slide-to="1"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <!--chua cac image trong carousel-->
+            <div class="carousel-item">
+                <img src="image-folder/girl_xinh_BD.jpg" alt="girl_xinh_BD">
+                <div class="carousel-caption">
+                    <!--caption of first carousel item-->
+                    <h1 class="display2">Example</h1>
+                    <h3>Autolayout with Boostrap4</h3>
+                    <button type="button" class="btn btn-outline-dark  btn-lg">
+                        <!--btn-outline-light : the button have no color but can see its border
+                        btn-lg : the size of button is large-->
+                        VIEW MY TUTORIALS
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image-folder/girl_xinh_BD2.jpg" alt="girl_xinh_BD2">
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#slide" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#silde" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+    <!--jumbotron : basicaly, this just a text to maketting the impotance info you want show-->
+    <div class="jumbotron jumbotron-fluid" id="jumbotron">
+        <div class="container-fluid padding">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p>This is an example of using Bootstrap to make a responsive Website. This is a tutorial</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <a href="#">
+                    <button type="button" class="btn btn-outline-secondary"> Buy Me</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">build your application </h1>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p>Welcome my Bootstrap 4 tutorials. Bootstrap is an open-source and free front-end library with HTML and CSS based design</p>
+            </div>
+        </div>
+    </div>
+    <!--Describe the tools -->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class=" col-xs-12 col-sm-6 col-md-4" id="mydiv">
+                <i class="fab fa-react"></i>
+                <!--i : icon /fab : font-awesome-brand /fa-react : font-awesome REACT-->
+                <h3>REACT</h3>
+                <p>Build the latest version of React</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fab fa-angular"></i>
+                <!--i : icon /fab : font-awesome-brand /fa-react : font-awesome REACT-->
+                <h3>ANGULAR</h3>
+                <P>Build your Website and Front-end Application</P>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fab fa-css3"></i>
+                <!--i : icon /fab : font-awesome-brand /fa-react : font-awesome REACT-->
+                <h3>CSS3, HTML5</h3>
+                <P>Customize your website UI with HTML5 and CSS3</P>
+            </div>
+        </div>
+        <hr class="my-3">
+    </div>
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-12 col-lg-6">
+                <h2>If you build it...</h2>
+                <p>Arduino is an open-source hardware, software and content platform with a global community. It’s intended for anyone making interactive projects.</p>
+                <p>Arduino Education is a dedicated team formed by education experts, content developers, engineers and interaction designers from all around the world</p>
+                <br>
+            </div>
+            <div class="col-lg-6">
+                <img src="image-folder/cave.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <hr class="my-2">
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Meet our of team</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image-folder/cave2.jpg" class="card-img-top">
+                    <div class="body-card">
+                        <h3 class="card-tittle">Nguyen Sy Canh Hung</h3>
+                        <p class="card-text">Hung is a full-stack developer with 0 years of experients</p>
+                        <button class="btn btn-outline-dark btn-light">See Profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image-folder/cave2.jpg" class="card-img-top">
+                    <div class="body-card">
+                        <h3 class="card-tittle">Bui Thai Hoang</h3>
+                        <p class="card-text">Hung is a full-stack developer with 0.5 years of experients</p>
+                        <button class="btn btn-outline-dark btn-light">See Profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image-folder/cave2.jpg" class="card-img-top">
+                    <div class="body-card">
+                        <h3 class="card-tittle">Truong Minh Tri</h3>
+                        <p class="card-text">Hung is a full-stack developer with 0 years of experients</p>
+                        <button class="btn btn-outline-dark btn-light">See Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-12 col-lg-6">
+                <h2>Our vision</h2>
+                <p>All our work is for customer satisfaction with high quality products</p>
+                <p>We make outsourcing all softwares relating to CMS, Database, Education</p>
+                <br>
+            </div>
+            <div class="col-lg-6">
+                <img src="image-folder/cave2.jpg" class="card-img-top">
+            </div>
+        </div>
+    </div>
+    <hr class="my-4">
+    <!--footer-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2> Contact Us</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-wordpress"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-4">
+                    <img src="image-folder/logo.png">
+                    <hr class="light">
+                    <p>111-222-3333</p>
+                    <p>mymail@gmail.com</p>
+                    <p>Bach Mai street, Hanoi, Vietnam</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Working hours</h5>
+                    <hr class="light">
+                    <p>Monday-Friday: 8am - 5pm</p>
+                    <p>Weekend: 8am - 12am</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Services</h5>
+                    <hr class="light">
+                    <p>Outsourcing</p>
+                    <p>Website development</p>
+                    <p>Mobile applications</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5>&copy; WebPro</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
